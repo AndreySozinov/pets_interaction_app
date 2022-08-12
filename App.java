@@ -8,8 +8,12 @@ public class App {
         //tiger.voice();
 
         People Andrey = new People("Andrey");
+        People Sergey = new People("Sergey");
 
-        Andrey.callPet(tiger);
-        Andrey.callPet(spike);
+        Andrey.callCat(tiger);
+        Andrey.callDog(spike);
+
+        Sergey.callDog(spike);
+        Sergey.callCat(tiger);
     }
 }

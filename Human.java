@@ -9,7 +9,6 @@ public abstract class Human{
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
         return String.format("%s", name);
     }
 }

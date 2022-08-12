@@ -6,13 +6,17 @@ public class People extends Human implements HumanAction{
         super(name);
     }
 
-    public void callPet(Cat cat) {
+    public void callCat(Cat cat) {
         System.out.printf("\n%s: kitty kitty!", this.name);
-        cat.voice();
+        if (this.name.equals("Andrey")) {
+            cat.voice1();
+        } else { cat.voice2(); }
     }
 
-    public void callPet(Dog dog) {
+    public void callDog(Dog dog) {
         System.out.printf("\n%s: C'mon, boy!!", this.name);
-        dog.voice();
+        if (this.name.equals("Andrey")) {
+            dog.voice1();
+        } else { dog.voice2(); }
     }
 }

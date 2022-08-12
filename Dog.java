@@ -6,12 +6,18 @@ public class Dog extends BasePet implements BasePetAction{
         super(name);
     }
 
-    void voice() {
+    @Override
+    public void voice1() {
         System.out.printf("\n%s: Woof!", this.name);
     }
 
     @Override
-    public void Sleeping() {
-        System.out.println("RRRR...");
+    public void voice2() {
+        System.out.printf("\n%s: GRRRR!", this.name);
+    }
+
+    @Override
+    public void sleeping() {
+        System.out.println("Zzzzzz...");
     }
 }
