@@ -2,8 +2,8 @@ package pets;
 
 public interface BasePetAction {
     
-    abstract void sleeping();
+    void sleeping();
 
-    abstract void voice1();
-    abstract void voice2();
+    void voice1();
+    void voice2();
 }

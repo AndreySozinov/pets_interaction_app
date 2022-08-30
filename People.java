@@ -4,7 +4,7 @@ public class People extends Human implements HumanAction{
 
     People(String name) {
         super(name);
-    }
+    }   
 
     public void callCat(Cat cat) {
         System.out.printf("\n%s: kitty kitty!", this.name);
